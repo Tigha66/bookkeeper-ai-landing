@@ -1,0 +1,16 @@
+{
+  "publishes": {
+    "golden-poplar-4m6h": {
+      "siteUrl": "https://golden-poplar-4m6h.here.now/",
+      "claimToken": "56990381944ccab7e833a8f763b2047f7a874f55c70745bb77fd0de1dfe5103a",
+      "claimUrl": "https://here.now/claim?slug=golden-poplar-4m6h&token=56990381944ccab7e833a8f763b2047f7a874f55c70745bb77fd0de1dfe5103a",
+      "expiresAt": "2026-03-18T22:39:51.789Z"
+    },
+    "thorny-mill-n7bq": {
+      "siteUrl": "https://thorny-mill-n7bq.here.now/",
+      "claimToken": "ff607ab35b8ea18437a8feeaaec0028d0857293014a451d98a2125d9a418c758",
+      "claimUrl": "https://here.now/claim?slug=thorny-mill-n7bq&token=ff607ab35b8ea18437a8feeaaec0028d0857293014a451d98a2125d9a418c758",
+      "expiresAt": "2026-03-18T22:40:30.681Z"
+    }
+  }
+}
