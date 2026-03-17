@@ -11,6 +11,12 @@
       "claimToken": "ff607ab35b8ea18437a8feeaaec0028d0857293014a451d98a2125d9a418c758",
       "claimUrl": "https://here.now/claim?slug=thorny-mill-n7bq&token=ff607ab35b8ea18437a8feeaaec0028d0857293014a451d98a2125d9a418c758",
       "expiresAt": "2026-03-18T22:40:30.681Z"
+    },
+    "wistful-beacon-w8z8": {
+      "siteUrl": "https://wistful-beacon-w8z8.here.now/",
+      "claimToken": "15553a172e10e0054fb03492d3c00ade426680dc829d81f8e88b580da7ab511e",
+      "claimUrl": "https://here.now/claim?slug=wistful-beacon-w8z8&token=15553a172e10e0054fb03492d3c00ade426680dc829d81f8e88b580da7ab511e",
+      "expiresAt": "2026-03-18T22:50:52.177Z"
     }
   }
 }
