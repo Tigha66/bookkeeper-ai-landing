@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookkeeperAI Pro - Version B (Minimal)</title>
+    <meta name="description" content="AI-powered bookkeeping for small business. Save 20+ hours/month.">
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        gtag('event', 'page_view', { page_title: 'BookkeeperAI Pro - Version B' });
+        gtag('event', 'ab_test', { event_category: 'test', event_label: 'Version_B' });
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white border-b border-gray-200 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center text-white font-bold">B</div>
+                <span class="font-bold text-xl">BookkeeperAI</span>
+            </div>
+            <button onclick="openModal()" class="gradient-bg text-white px-6 py-2 rounded-lg font-semibold">Start Free Trial</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Bookkeeping, Automated</h1>
+            <p class="text-xl text-gray-600 mb-8">AI that saves you 20+ hours/month. 95% accurate. 50% cheaper than QuickBooks.</p>
+            <div class="flex gap-4 justify-center">
+                <button onclick="openModal()" class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold text-lg">Start 14-Day Free Trial</button>
+                <button class="border-2 border-gray-300 px-8 py-4 rounded-lg font-semibold text-lg">Watch Demo</button>
+            </div>
+            <p class="text-sm text-gray-500 mt-4">No credit card required • Cancel anytime</p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-2">AI Categorization</h3>
+                    <p class="text-gray-600">95%+ accurate transaction categorization</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-2">Tax Deductions</h3>
+                    <p class="text-gray-600">Find missed deductions. Avg savings: $8,500/year</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-2">Instant Reports</h3>
+                    <p class="text-gray-600">CPA-ready reports in one click</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Simple Pricing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-600 mb-6">For freelancers</p>
+                    <div class="mb-6"><span class="text-5xl font-bold">$99</span><span class="text-gray-600">/month</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li>✓ 3 bank accounts</li>
+                        <li>✓ Auto-categorization</li>
+                        <li>✓ 50 receipt scans/month</li>
+                    </ul>
+                    <button onclick="openModal()" class="w-full border-2 border-gray-300 py-3 rounded-lg font-semibold">Start Free Trial</button>
+                </div>
+                <div class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white p-8 rounded-xl transform scale-105">
+                    <div class="text-sm bg-yellow-400 text-gray-900 px-3 py-1 rounded-full inline-block mb-4 font-bold">MOST POPULAR</div>
+                    <h3 class="text-2xl font-bold mb-2">Growth</h3>
+                    <p class="text-indigo-100 mb-6">For small businesses</p>
+                    <div class="mb-6"><span class="text-5xl font-bold">$299</span><span class="text-indigo-100">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ Everything in Starter</li>
+                        <li>✓ 10 bank accounts</li>
+                        <li>✓ Tax estimates</li>
+                        <li>✓ 3 users</li>
+                    </ul>
+                    <button onclick="openModal()" class="w-full bg-white text-indigo-600 py-3 rounded-lg font-semibold">Start Free Trial</button>
+                </div>
+                <div class="bg-white p-8 rounded-xl border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2">Business</h3>
+                    <p class="text-gray-600 mb-6">For established businesses</p>
+                    <div class="mb-6"><span class="text-5xl font-bold">$599</span><span class="text-gray-600">/month</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li>✓ Everything in Growth</li>
+                        <li>✓ Unlimited accounts</li>
+                        <li>✓ Full tax prep</li>
+                        <li>✓ Dedicated support</li>
+                    </ul>
+                    <button onclick="openModal()" class="w-full border-2 border-gray-300 py-3 rounded-lg font-semibold">Start Free Trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Save Time?</h2>
+            <p class="text-xl text-gray-600 mb-8">Join 500+ businesses using BookkeeperAI</p>
+            <button onclick="openModal()" class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold text-lg">Start Your 14-Day Free Trial</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2026 BookkeeperAI, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-xl p-8 max-w-md mx-4" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="float-right text-gray-400 hover:text-gray-600"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <h3 class="text-2xl font-bold mb-4">Join the Waitlist</h3>
+            <form onsubmit="handleSubmit(event)" class="space-y-4">
+                <input type="text" placeholder="Full Name" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg">
+                <input type="email" placeholder="Email" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg">
+                <input type="text" placeholder="Company" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg">
+                <button type="submit" class="w-full gradient-bg text-white py-4 rounded-lg font-bold">Join Waitlist</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        
+        function openModal() { document.getElementById('modal').classList.remove('hidden'); document.getElementById('modal').classList.add('flex'); }
+        function closeModal() { document.getElementById('modal').classList.add('hidden'); document.getElementById('modal').classList.remove('flex'); }
+        
+        function handleSubmit(event) {
+            event.preventDefault();
+            const formData = {
+                name: event.target[0].value,
+                email: event.target[1].value,
+                company: event.target[2].value,
+                timestamp: new Date().toISOString()
+            };
+            const waitlist = JSON.parse(localStorage.getItem('waitlist') || '[]');
+            waitlist.push(formData);
+            localStorage.setItem('waitlist', JSON.stringify(waitlist));
+            closeModal();
+            alert('Thanks for joining! We\'ll be in touch.');
+            
+            gtag('event', 'waitlist_signup', { event_category: 'conversion', event_label: 'Version_B' });
+        }
+    </script>
+</body>
+</html>
